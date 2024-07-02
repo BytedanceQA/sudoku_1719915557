@@ -74,7 +74,7 @@ void InputLanguage() {
     try {
       auto l = static_cast<Language>(std::stoul(language) - 1);
       if (l < Language::MAX) {
-        I18n::Instance().SetLanguage(l);
+        I18n::Instance().SetLanguage(language);
         return;
       }
     } catch (...) {

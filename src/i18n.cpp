@@ -44,9 +44,6 @@ void I18n::SetLanguage(Language language) {
     case Language::ENGLISH:
       dict_ = &english;
       break;
-    case Language::CHINESE:
-      dict_ = &chinese;
-      break;
     case Language::MAX:
     default:
       assert(false);
